@@ -12,6 +12,7 @@ require_relative '../config/environment'
 
   if input == "0"
     game = Game.new(player_1 = Players::Computer.new("X"), player_2 = Players::Computer.new("O"), board=Board.new)
+    game.play
   elsif input == "1"
     puts "Enter 1 for you to go first as X"
     puts "Enter 2 for the Computer to go first as X"
