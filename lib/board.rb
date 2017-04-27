@@ -20,7 +20,6 @@ class Board
   end
 
   def position(input)
-    puts "Please enter 1-9:"
     index = input.to_i - 1
     self.cells[index]
   end
@@ -49,7 +48,7 @@ class Board
 
   def update(input, player)
     index = input.to_i - 1
-    self.cells[index] = player.token if valid_move?(input) 
+    self.cells[index] = player.token if valid_move?(input)
   end
 
 end
